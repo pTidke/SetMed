@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/pillView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="12dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:text="Pill Slot"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_sans_sc" />
+
+        <ImageView
+            android:id="@+id/pillLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/one" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name of Pill"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:fontFamily="@font/handlee" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/inputNamePill"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_edittext"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:text="Frequency of Pill"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:fontFamily="@font/handlee" />
+
+        <Spinner
+            android:id="@+id/inputFreqPill"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_spinner"
+            android:dropDownWidth="match_parent"
+            android:scrollbarStyle="outsideInset" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="4dp"
+            android:background="@drawable/bg_freq">
+
+            <TextView
+                android:id="@+id/timeFreq1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="10:00AM"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/kadwa_bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/q0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Quantity"
+                android:textColor="@color/primary_darker"
+                android:textSize="20sp"
+                app:fontFamily="@font/handlee"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+                <EditText
+                    android:id="@+id/quantityPill1"
+                    android:layout_width="72dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/timeFreq2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="4:00PM"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/kadwa_bold" />
+
+            <TextView
+                android:id="@+id/q1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Quantity"
+                android:textColor="@color/primary_darker"
+                android:textSize="20sp"
+                app:fontFamily="@font/handlee"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+                <EditText
+                    android:id="@+id/quantityPill2"
+                    android:layout_width="72dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/timeFreq3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="9:00PM"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/kadwa_bold" />
+
+            <TextView
+                android:id="@+id/q2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Quantity"
+                android:textColor="@color/primary_darker"
+                android:textSize="20sp"
+                app:fontFamily="@font/handlee"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+                <EditText
+                    android:id="@+id/quantityPill3"
+                    android:layout_width="72dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Number of days"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            app:fontFamily="@font/handlee" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/inputDays"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_edittext"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="setTimeArray"
+            android:padding="12dp"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+</ScrollView>
